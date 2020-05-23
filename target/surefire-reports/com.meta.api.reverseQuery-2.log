@@ -1,0 +1,31 @@
+17:56:42.940 request:
+1 > POST https://devapi.deposit-book.com/reverseQueries
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: BearerauthId
+1 > Connection: Keep-Alive
+1 > Content-Length: 298
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: devapi.deposit-book.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+1 > origin: https://devclient.deposit-book.com
+{"amount" : "120000","min_interest_rate" : "5.2","currency" : "USD","tenor_value" : "14","tenor_type" : "DAYS","deposit_type" : "FIXED_DEPOSIT","partner_list" : ["15116d0914614c66a650af73850fadde", "95f04b2e-4b08-4076-a5da-ba8931296724"],"message" : "","valid_upto" : "2020-01-10T13:45:53.530985Z"}
+
+17:56:43.317 response time in milliseconds: 373.42
+1 < 401
+1 < Access-Control-Allow-Origin: https://devclient.deposit-book.com
+1 < Allow: GET, POST, HEAD, OPTIONS
+1 < Connection: keep-alive
+1 < Content-Length: 58
+1 < Content-Security-Policy: default-src 'self'
+1 < Content-Type: application/json
+1 < Date: Wed, 08 Jan 2020 12:26:42 GMT
+1 < Server: Apache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Origin
+1 < WWW-Authenticate: Bearer realm="api"
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+{"detail":"Authentication credentials were not provided."}
+
+17:56:43.320 status code was: 401, expected: 200, response time: 373, url: https://devapi.deposit-book.com/reverseQueries, response: {"detail":"Authentication credentials were not provided."}
