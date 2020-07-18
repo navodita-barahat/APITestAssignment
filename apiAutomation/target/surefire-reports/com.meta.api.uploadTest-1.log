@@ -1,0 +1,27 @@
+22:02:48.351 request:
+1 > POST https://devapi.deposit-book.com/depositRequestPipelines/9fb90005-2aaa-4c2c-89ee-82e5a57bfb32/custodianReceipt
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer IIWDcrnZq4CWeuXuu6XR9CJjadnktK
+1 > Connection: Keep-Alive
+1 > Content-Length: 20819
+1 > Content-Type: multipart/form-data; boundary=sducGPvevFi3KaqEECSqw-gNR3nfQfB-djvynE
+1 > Host: devapi.deposit-book.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+22:02:49.902 response time in milliseconds: 1546.98
+1 < 400
+1 < Allow: POST, OPTIONS
+1 < Connection: keep-alive
+1 < Content-Length: 249
+1 < Content-Security-Policy: default-src 'self'
+1 < Content-Type: application/json
+1 < Date: Sat, 22 Feb 2020 16:32:49 GMT
+1 < Server: Apache
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-XSS-Protection: 1; mode=block
+{"type":"error","shortDescription":"Incomplete Data Sent","longDescription":"Some of the parameters sent are either missing or incorrect.","error":"Incomplete Data Sent","error_message":"Some of the parameters sent are either missing or incorrect."}
+
+22:02:49.903 status code was: 400, expected: 200, response time: 1547, url: https://devapi.deposit-book.com/depositRequestPipelines/9fb90005-2aaa-4c2c-89ee-82e5a57bfb32/custodianReceipt, response: {"type":"error","shortDescription":"Incomplete Data Sent","longDescription":"Some of the parameters sent are either missing or incorrect.","error":"Incomplete Data Sent","error_message":"Some of the parameters sent are either missing or incorrect."}
